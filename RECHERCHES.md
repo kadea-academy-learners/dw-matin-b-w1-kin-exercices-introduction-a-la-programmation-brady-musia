@@ -11,17 +11,19 @@
 
 **Ma réponse (avec mes mots, 3 à 5 lignes) :**
 
-...
+null n'est pas un objet, c'est une valeur qui veut dire « vide exprès ». Si typeof null donne 'object', c'est à cause d'une erreur dans les débuts de JavaScript, qui n'a jamais été corrigée pour que les vieux sites continuent de marcher. Il ne faut pas le confondre avec undefined, qui veut dire « pas encore de valeur ». Pour tester null, on utilise valeur === null.
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+typeof null          // 'object'
+typeof undefined     // 'undefined'
+null === null        // true
 ```
 
-**Source :** 
+**Source :** https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/typeof
 
-**IA utilisée ? (prompt + vérification sur MDN) :** non
+**IA utilisée ? (prompt + vérification sur MDN) :** oui, pour m'aider à comprendre — prompt : « Explique simplement pourquoi typeof null donne 'object' ». J'ai ensuite lu la partie « typeof null » sur MDN et j'ai tapé les tests moi-même dans la console du navigateur pour vérifier.
 
 ## F2 — Le convertisseur de saisie
 

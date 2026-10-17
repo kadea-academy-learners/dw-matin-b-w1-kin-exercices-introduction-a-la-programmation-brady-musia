@@ -22,4 +22,19 @@ Pourquoi typeof null renvoie-t-il 'object' alors que null n'est pas un objet ?
 
 // ✍️ Ton code ici 👇 (règles : const/let, ===, gabarits littéraux, fonctions fléchées, camelCase)
 
+// const car mon prénom ne change pas
+const prenom = 'Brady';
+// const car je ne modifie pas l'âge dans le programme
+const age = 28;
+// const car la commune ne change pas
+const commune = 'Bandalungwa';
+// const car je suis inscrit et ça ne change pas
+const estInscrit = true;
+// let car pas de valeur pour l'instant (const oblige à mettre une valeur)
+let surnom;
+// const car null ne va pas changer
+const ancienneFormation = null;
 
+console.log(`Je m'appelle ${prenom}, j'ai ${age} ans et j'habite à ${commune}.`);
+
+console.log(typeof prenom, typeof age, typeof commune, typeof estInscrit, typeof surnom, typeof ancienneFormation);
