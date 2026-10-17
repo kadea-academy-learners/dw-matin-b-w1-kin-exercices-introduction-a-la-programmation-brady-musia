@@ -90,15 +90,16 @@ age < 5 ? 'gratuit' : age < 18 ? '500 FC' : '1000 FC'   // '1000 FC'
 
 **Ma réponse (avec mes mots, 3 à 5 lignes) :**
 
-...
+Les parenthèses peuvent disparaître seulement s'il y a exactement un paramètre : x => x * 2 marche, mais () => ... et (a, b) => ... doivent les garder. Pour les accolades et le return, on peut les enlever si la fonction ne fait qu'une chose : renvoyer un résultat sur une ligne. Dès qu'il y a plusieurs instructions, il faut remettre les accolades et écrire return.
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+const double = x => x * 2;
+double(4)   // 8
 ```
 
-**Source :** 
+**Source :** https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Functions/Arrow_functions
 
 **IA utilisée ? (prompt + vérification sur MDN) :** non
 
