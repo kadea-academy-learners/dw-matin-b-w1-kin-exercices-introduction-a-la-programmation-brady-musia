@@ -332,17 +332,19 @@ typeof (0.1 + 0.2).toFixed(2)  // 'string'
 
 **Ma réponse (avec mes mots, 3 à 5 lignes) :**
 
-...
+On peut donner un deuxième argument à console.table() avec la liste des colonnes à afficher : console.table(produits, ['nom', 'stock']). Quand rien ne correspond, .find() renvoie undefined, et .filter() renvoie un tableau vide [].
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+console.table(produits, ['nom', 'stock'])
+[1, 2].find(x => x > 5)     // undefined
+[1, 2].filter(x => x > 5)   // []
 ```
 
-**Source :** 
+**Source :** https://developer.mozilla.org/fr/docs/Web/API/console/table_static
 
-**IA utilisée ? (prompt + vérification sur MDN) :** non
+**IA utilisée ? (prompt + vérification sur MDN) :** oui, pour m'aider à comprendre — prompt : « Comment afficher seulement certaines colonnes avec console.table() et que renvoient find() et filter() quand rien ne correspond ? ». J'ai ensuite lu les pages console.table, find et filter sur MDN et j'ai testé moi-même dans la console.
 
 ## A4 — Le classement de la promo
 
