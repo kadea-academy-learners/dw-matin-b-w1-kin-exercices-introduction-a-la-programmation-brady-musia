@@ -228,17 +228,21 @@ var h = 3;
 
 **Ma réponse (avec mes mots, 3 à 5 lignes) :**
 
-...
+Quand on oublie un point-virgule, JavaScript essaie de le mettre tout seul en fin de ligne : c'est l'ASI. Avec return, c'est un piège, car s'il n'y a rien après return sur la même ligne, JavaScript lit « return; ». La fonction s'arrête et renvoie undefined, même si la valeur est écrite juste en dessous. Il faut donc toujours commencer la valeur sur la même ligne que return.
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+const f = () => {
+  return
+    5;
+};
+f()   // undefined
 ```
 
-**Source :** 
+**Source :** https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/return
 
-**IA utilisée ? (prompt + vérification sur MDN) :** non
+**IA utilisée ? (prompt + vérification sur MDN) :** non, car c'est une notion que je connais déjà.
 
 ## M7 — La tirelire numérique
 
