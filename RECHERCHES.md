@@ -314,17 +314,17 @@ typeof (0.1 + 0.2).toFixed(2)  // 'string'
 
 **Ma réponse (avec mes mots, 3 à 5 lignes) :**
 
-...
+.reduce() parcourt un tableau et garde un résultat qu'on fait évoluer à chaque élément (l'accumulateur). On lui donne une fonction (acc, element) et une valeur de départ. Pour l'étape 2 : heuresSemaine.reduce((acc, h) => acc + h, 0) donne 48 directement, sans créer de variable totalHeures avant.
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+[8, 9, 10, 8, 7, 6].reduce((acc, h) => acc + h, 0)   // 48
 ```
 
-**Source :** 
+**Source :** https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
 
-**IA utilisée ? (prompt + vérification sur MDN) :** non
+**IA utilisée ? (prompt + vérification sur MDN) :** oui, pour m'aider à comprendre — prompt : « Explique simplement la méthode reduce() en JavaScript avec un exemple de somme ». J'ai ensuite lu la page reduce sur MDN et j'ai testé l'exemple moi-même dans la console.
 
 ## A3 — L'inventaire en console
 
