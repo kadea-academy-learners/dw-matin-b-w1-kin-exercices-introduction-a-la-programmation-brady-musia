@@ -51,17 +51,19 @@ Number.isNaN(Number('abc'))  // true
 
 **Ma réponse (avec mes mots, 3 à 5 lignes) :**
 
-...
+En JavaScript, -7 % 2 renvoie -1. Le signe du reste suit celui du nombre de départ, donc un impair négatif donne -1 et pas 1. Avec % 2 === 1, -7 serait considéré comme pair, ce qui est faux. En testant % 2 !== 0 (« le reste n'est pas zéro »), on détecte tous les impairs, positifs ou négatifs.
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+-7 % 2            // -1
+-7 % 2 === 1      // false
+-7 % 2 !== 0      // true
 ```
 
-**Source :** 
+**Source :** https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/Remainder
 
-**IA utilisée ? (prompt + vérification sur MDN) :** non
+**IA utilisée ? (prompt + vérification sur MDN) :** non, car c'est une leçon que je connais déjà grâce à mes recherches.
 
 ## F4 — Le contrôleur du bus
 
