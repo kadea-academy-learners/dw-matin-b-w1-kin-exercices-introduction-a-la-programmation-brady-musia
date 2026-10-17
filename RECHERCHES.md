@@ -294,15 +294,17 @@ console.log(t, b);   // 1 0
 
 **Ma réponse (avec mes mots, 3 à 5 lignes) :**
 
-...
+L'ordinateur stocke les nombres en binaire, et certains décimaux comme 0.1 ou 0.2 ne peuvent pas être écrits exactement. Il y a une toute petite erreur, donc 0.1 + 0.2 donne 0.30000000000000004. toFixed() arrondit mais renvoie du texte : si on fait ensuite un + avec, ça colle au lieu d'additionner. C'est pour ça que j'utilise Math.round().
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+0.1 + 0.2                      // 0.30000000000000004
+(0.1 + 0.2).toFixed(2)         // '0.30'
+typeof (0.1 + 0.2).toFixed(2)  // 'string'
 ```
 
-**Source :** 
+**Source :** https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
 
 **IA utilisée ? (prompt + vérification sur MDN) :** non
 
