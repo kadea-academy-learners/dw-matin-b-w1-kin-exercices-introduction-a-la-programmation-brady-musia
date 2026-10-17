@@ -207,15 +207,18 @@ null ?? 'aucun'   // 'aucun'
 
 **Ma réponse (avec mes mots, 3 à 5 lignes) :**
 
-...
+var est banni parce qu'il ne respecte pas les blocs { } : une variable var déclarée dans un if ou une boucle reste visible en dehors. Sa portée est toute la fonction, pas le bloc. Il y a aussi le hoisting : JavaScript remonte la déclaration en haut du code, donc on peut utiliser la variable avant de l'avoir écrite, et on obtient undefined sans message d'erreur. Avec let et const, on a une vraie erreur, ce qui aide à trouver les bugs.
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+if (true) { var v = 1; }
+console.log(v);   // 1 (elle sort du bloc)
+console.log(h);   // undefined (hoisting)
+var h = 3;
 ```
 
-**Source :** 
+**Source :** https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/var
 
 **IA utilisée ? (prompt + vérification sur MDN) :** non
 
