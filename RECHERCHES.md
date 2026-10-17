@@ -187,15 +187,17 @@ Boolean('0')    // true
 
 **Ma réponse (avec mes mots, 3 à 5 lignes) :**
 
-...
+L'opérateur ?? sert à mettre une valeur par défaut quand il n'y a « rien » : il ne remplace que null et undefined. || est plus large, il remplace toutes les valeurs falsy, y compris 0, '' et false. Pour un score, 0 est une vraie valeur, donc il faut utiliser ?? pour ne pas la perdre.
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+0 || 'aucun'      // 'aucun'
+0 ?? 'aucun'      // 0
+null ?? 'aucun'   // 'aucun'
 ```
 
-**Source :** 
+**Source :** https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing
 
 **IA utilisée ? (prompt + vérification sur MDN) :** non
 
