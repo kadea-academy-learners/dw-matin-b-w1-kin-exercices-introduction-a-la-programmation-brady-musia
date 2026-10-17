@@ -250,17 +250,23 @@ f()   // undefined
 
 **Ma réponse (avec mes mots, 3 à 5 lignes) :**
 
-...
+Un opérateur d'affectation composée est un raccourci : n += 5 veut dire n = n + 5. Il y a += pour ajouter, -= pour soustraire, *= pour multiplier, /= pour diviser, %= pour garder le reste et **= pour la puissance. Il existe aussi &&=, ||= et ??=, qui donnent une valeur selon la condition. Dans la tirelire, j'utilise += pour ajouter l'épargne chaque semaine.
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+let n = 10;
+n += 5;   // 15
+n -= 3;   // 12
+n *= 2;   // 24
+n /= 4;   // 6
+n %= 4;   // 2
+n **= 3;  // 8
 ```
 
-**Source :** 
+**Source :** https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/Assignment
 
-**IA utilisée ? (prompt + vérification sur MDN) :** non
+**IA utilisée ? (prompt + vérification sur MDN) :** oui, pour m'aider à comprendre — prompt : « Liste les opérateurs d'affectation composée en JavaScript avec un exemple pour chacun ». J'ai ensuite lu la page des opérateurs d'affectation sur MDN et j'ai testé chaque exemple moi-même dans la console.
 
 ## M8 — La batterie qui se décharge
 
