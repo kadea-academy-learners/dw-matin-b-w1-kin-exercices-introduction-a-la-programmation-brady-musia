@@ -71,17 +71,18 @@ En JavaScript, -7 % 2 renvoie -1. Le signe du reste suit celui du nombre de dép
 
 **Ma réponse (avec mes mots, 3 à 5 lignes) :**
 
-...
+Oui, c'est possible : on peut écrire condition1 ? a : condition2 ? b : c. Le problème, c'est que tout est sur une seule ligne et qu'on ne voit plus bien quelle condition donne quel résultat. Pour plus de deux choix, un if / else if / else est beaucoup plus clair et plus facile à corriger.
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+const age = 70;
+age < 5 ? 'gratuit' : age < 18 ? '500 FC' : '1000 FC'   // '1000 FC'
 ```
 
-**Source :** 
+**Source :** https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/Conditional_operator
 
-**IA utilisée ? (prompt + vérification sur MDN) :** non
+**IA utilisée ? (prompt + vérification sur MDN) :** oui, pour m'aider à comprendre — prompt : « Peut-on enchaîner plusieurs ternaires en JavaScript et pourquoi c'est déconseillé ? ». J'ai ensuite lu la page de l'opérateur conditionnel sur MDN et j'ai testé l'exemple moi-même dans la console.
 
 ## F5 — Ma première fonction fléchée
 
