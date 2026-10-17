@@ -109,17 +109,18 @@ double(4)   // 8
 
 **Ma réponse (avec mes mots, 3 à 5 lignes) :**
 
-...
+continue sert à sauter un tour : quand JavaScript le rencontre, il ignore le reste du code de ce tour et passe au suivant. break, lui, sort complètement de la boucle, et plus aucun tour n'est fait. Si j'avais mis break à la place de continue sur le 5, le compte à rebours se serait arrêté à 6, puis Décollage ! se serait affiché directement, sans les nombres de 4 à 1.
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+for (let i = 1; i <= 5; i++) { if (i === 3) continue; console.log(i); }  // 1 2 4 5
+for (let i = 1; i <= 5; i++) { if (i === 3) break; console.log(i); }     // 1 2
 ```
 
-**Source :** 
+**Source :** https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/continue
 
-**IA utilisée ? (prompt + vérification sur MDN) :** non
+**IA utilisée ? (prompt + vérification sur MDN) :** non, car c'est une notion que je connais déjà.
 
 ## M1 — FizzBuzz kinois
 
