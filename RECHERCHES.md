@@ -147,17 +147,18 @@ FizzBuzz est un petit test qui montre vite si quelqu'un sait vraiment coder : ut
 
 **Ma réponse (avec mes mots, 3 à 5 lignes) :**
 
-...
+toLocaleString() transforme un nombre en texte avec le format d'une langue. En français ('fr-FR'), il ajoute un espace entre les milliers, donc 75000 devient « 75 000 ». Attention, le résultat est du texte, plus un nombre.
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+(75000).toLocaleString('fr-FR')   // '75 000'
+typeof (75000).toLocaleString()   // 'string'
 ```
 
-**Source :** 
+**Source :** https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Number/toLocaleString
 
-**IA utilisée ? (prompt + vérification sur MDN) :** non
+**IA utilisée ? (prompt + vérification sur MDN) :** oui, pour m'aider à comprendre — prompt : « Comment afficher 75000 sous la forme 75 000 avec toLocaleString() ? ». J'ai ensuite lu la page toLocaleString sur MDN et j'ai testé moi-même dans la console.
 
 ## M3 — Le détecteur de champs vides (Truthy / Falsy)
 
