@@ -274,15 +274,17 @@ n **= 3;  // 8
 
 **Ma réponse (avec mes mots, 3 à 5 lignes) :**
 
-...
+Avec while, la condition est testée au début : si elle est fausse dès le départ, la boucle ne tourne jamais. Avec do...while, le code s'exécute une première fois avant de tester la condition, donc il y a toujours au moins un tour. À l'étape 4, en partant de 15 %, un do...while retirerait quand même 15 % : on aurait « Après 1 h, batterie à 0 % ».
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+let b = 15, t = 0;
+do { b -= 15; t++; } while (b > 20);
+console.log(t, b);   // 1 0
 ```
 
-**Source :** 
+**Source :** https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/do...while
 
 **IA utilisée ? (prompt + vérification sur MDN) :** non
 
