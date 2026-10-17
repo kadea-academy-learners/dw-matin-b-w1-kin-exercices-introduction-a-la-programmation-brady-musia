@@ -166,17 +166,20 @@ typeof (75000).toLocaleString()   // 'string'
 
 **Ma réponse (avec mes mots, 3 à 5 lignes) :**
 
-...
+Une valeur falsy est une valeur que JavaScript considère comme « faux » dans un if. La liste complète : false, 0, -0, 0n, la chaîne vide '', null, undefined et NaN. Dans l'exercice, il manquait -0 et 0n (un grand nombre BigInt égal à zéro). Tout le reste est truthy, même une chaîne avec un espace ou le texte '0'.
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+Boolean(0)      // false
+Boolean(-0)     // false
+Boolean(0n)     // false
+Boolean('0')    // true
 ```
 
-**Source :** 
+**Source :** https://developer.mozilla.org/fr/docs/Glossary/Falsy
 
-**IA utilisée ? (prompt + vérification sur MDN) :** non
+**IA utilisée ? (prompt + vérification sur MDN) :** non, car c'est une leçon que je connais déjà.
 
 ## M4 — Le score par défaut : || contre ??
 
