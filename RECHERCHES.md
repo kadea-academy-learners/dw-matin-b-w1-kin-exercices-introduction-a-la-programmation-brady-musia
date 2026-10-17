@@ -352,17 +352,20 @@ console.table(produits, ['nom', 'stock'])
 
 **Ma réponse (avec mes mots, 3 à 5 lignes) :**
 
-...
+Pour trier du meilleur au moins bon : bulletin.sort((a, b) => b.moyenne - a.moyenne). .sort() trie directement le tableau d'origine, il ne fait pas de copie, donc l'ordre de départ est perdu. Pour l'éviter, on fait d'abord une copie avec [...bulletin].sort(...) ou on utilise toSorted().
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+const notes = [{ nom: 'A', moyenne: 15 }, { nom: 'B', moyenne: 17 }];
+const tri = [...notes].sort((a, b) => b.moyenne - a.moyenne);
+tri.map(x => x.nom)     // ['B', 'A']
+notes.map(x => x.nom)   // ['A', 'B'] (pas modifié)
 ```
 
-**Source :** 
+**Source :** https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
 
-**IA utilisée ? (prompt + vérification sur MDN) :** non
+**IA utilisée ? (prompt + vérification sur MDN) :** oui, pour m'aider à comprendre — prompt : « Comment trier un tableau d'objets par moyenne avec sort() sans modifier l'original ? ». J'ai ensuite lu la page sort sur MDN et j'ai testé l'exemple moi-même dans la console.
 
 ## A5 — Le nombre mystère
 
