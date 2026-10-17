@@ -373,14 +373,15 @@ notes.map(x => x.nom)   // ['A', 'B'] (pas modifié)
 
 **Ma réponse (avec mes mots, 3 à 5 lignes) :**
 
-...
+La dichotomie consiste à couper la zone de recherche en deux à chaque essai. Je propose 50 : si on me répond « plus grand », il ne reste que 51 à 100, puis je propose le milieu, et ainsi de suite. À chaque réponse, la moitié des nombres disparaît. Comme 2 × 2 × 2 × 2 × 2 × 2 × 2 = 128 et que 128 est plus grand que 100, 7 essais suffisent toujours.
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+2 ** 7                     // 128
+Math.ceil(Math.log2(100))  // 7
 ```
 
-**Source :** 
+**Source :** https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Math/log2
 
-**IA utilisée ? (prompt + vérification sur MDN) :** non
+**IA utilisée ? (prompt + vérification sur MDN) :** oui, pour m'aider à comprendre — prompt : « Explique simplement la recherche dichotomique et pourquoi 7 essais suffisent entre 1 et 100 ». J'ai ensuite vérifié le calcul avec Math.log2 sur MDN et j'ai testé moi-même dans la console.
