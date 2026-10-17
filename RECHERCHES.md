@@ -31,17 +31,19 @@ null === null        // true
 
 **Ma réponse (avec mes mots, 3 à 5 lignes) :**
 
-...
+NaN signifie « pas un nombre ». On l'obtient quand JavaScript n'arrive pas à transformer quelque chose en nombre, comme Number('abc'), ou avec un calcul impossible comme 0 / 0. C'est une valeur spéciale qui n'est jamais égale à rien, même à un autre NaN, donc on ne peut pas la tester avec ===. Il faut utiliser Number.isNaN(valeur).
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+Number('abc')                // NaN
+NaN === NaN                  // false
+Number.isNaN(Number('abc'))  // true
 ```
 
-**Source :** 
+**Source :** https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/NaN
 
-**IA utilisée ? (prompt + vérification sur MDN) :** non
+**IA utilisée ? (prompt + vérification sur MDN) :** oui, pour m'aider à comprendre — prompt : « Explique simplement ce qu'est NaN et comment le détecter ». J'ai ensuite lu la page NaN sur MDN et j'ai tapé les tests moi-même dans la console du navigateur pour vérifier.
 
 ## F3 — Pair ou impair : le tirage des tickets
 
