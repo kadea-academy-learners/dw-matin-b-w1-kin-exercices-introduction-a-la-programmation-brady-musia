@@ -128,17 +128,18 @@ for (let i = 1; i <= 5; i++) { if (i === 3) break; console.log(i); }     // 1 2
 
 **Ma réponse (avec mes mots, 3 à 5 lignes) :**
 
-...
+FizzBuzz est un petit test qui montre vite si quelqu'un sait vraiment coder : utiliser une boucle, le modulo et des conditions dans le bon ordre. Beaucoup de candidats se trompent, surtout sur l'ordre des conditions (le cas 15). C'est simple, mais ça permet au recruteur d'éliminer rapidement.
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+15 % 3 === 0 && 15 % 5 === 0   // true
+9 % 5 === 0                    // false
 ```
 
-**Source :** 
+**Source :** https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/Remainder
 
-**IA utilisée ? (prompt + vérification sur MDN) :** non
+**IA utilisée ? (prompt + vérification sur MDN) :** non, le coach a insisté sur ce point pendant l'un de nos meets.
 
 ## M2 — Le distributeur automatique (DAB)
 
